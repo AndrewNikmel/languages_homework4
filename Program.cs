@@ -24,21 +24,20 @@
 // 82 -> 10
 // 9012 -> 12
 
-// Вот так оно не работает. надо думать
 
+int LineSum(int num){
+    if (num<10){
+        return num;
+    }
+    int rest = num%10;
+    int rr = num/10;
+    return rest + LineSum(rr);
+}
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int res = LineSum(number);
+Console.WriteLine($"Сумма цифр числа {number} равна {res}");
 
-// int LineSum(int num){
-//     int rest = num%10;
-//     int sum = 0;
-//     while(rest>0){
-//         sum = (num-rest)/10 + rest;
-//     }
-//     return sum;
-// }
-// Console.WriteLine("Enter the number");
-// int number = Convert.ToInt32(Console.ReadLine());
-// int res = LineSum(number);
-// Console.WriteLine($"Сумма цифр числа {number} составляет {res}");
 
 
 
@@ -47,3 +46,68 @@
 
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
+
+
+// int[] Array(){
+//     int [] arr = new int [8];
+//     for(int i = 0; i < arr.Length; i++){
+//         arr[i] = new Random().Next(0,2);
+//     }
+//     return arr;
+// }
+// void ShowArray(int[] arr){
+//     for (int i = 0; i < arr.Length; i++){
+//         Console.Write($"{arr[i]} ");
+//     }
+// }
+
+// ShowArray(Array());
+
+// второй вариант
+
+
+// int[] Array(int numb){
+//     int [] arr = new int [numb];
+//     for(int i = 0; i < numb; i++){
+//         arr[i] = new Random().Next(5,16);
+//     }
+//     return arr;
+// }
+// void ShowArray(int[] arr){
+//     for (int i = 0; i < arr.Length; i++){
+//         Console.Write($"{arr[i]} ");
+//     }
+// }
+// Console.WriteLine("Enter the size of array");
+// int lenghthy = Convert.ToInt32(Console.ReadLine());
+// ShowArray(Array(lenghthy));
+
+
+
+// int[] Array(int [] ar)
+// {
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     for (int i = 0; i < size; i++)
+//     {
+//         Console.WriteLine("Enter a number:");
+//         int a = Convert.ToInt32(Console.ReadLine());
+//         ar [a] = (a + " " );
+//     }
+//     return ar ;
+// }
+// Console.WriteLine("Enter the size of your array: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Array();
+// Console.WriteLine($"Your array is {Array()}");
+
+// void Size(){
+//     Console.WriteLine("Enter the size");
+//     int size = Convert.ToInt32(Console.ReadLine());
+// }
+
+// int [] Array(int arr){
+//     for(int i = 0; i < void Size(); i++){
+        
+//     }
+//     return arr
+// }
