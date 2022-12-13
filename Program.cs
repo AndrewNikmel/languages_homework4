@@ -25,18 +25,18 @@
 // 9012 -> 12
 
 
-int LineSum(int num){
-    if (num<10){
-        return num;
-    }
-    int rest = num%10;
-    int rr = num/10;
-    return rest + LineSum(rr);
-}
-Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int res = LineSum(number);
-Console.WriteLine($"Сумма цифр числа {number} равна {res}");
+// int LineSum(int num){
+//     if (num<10){
+//         return num;
+//     }
+//     int rest = num%10;
+//     int rr = num/10;
+//     return rest + LineSum(rr);
+// }
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int res = LineSum(number);
+// Console.WriteLine($"Сумма цифр числа {number} равна {res}");
 
 
 
@@ -111,3 +111,20 @@ Console.WriteLine($"Сумма цифр числа {number} равна {res}");
 //     }
 //     return arr
 // }
+
+/// give up again
+
+
+// void WriteArray(int [] array, int length){
+//     for (int i = 0; i < length; i++){
+//         int a = Convert.ToBase64CharArray(Console.ReadLine());
+//         array [i] = a;
+//         Console.WriteLine(array[i] + " ");
+//     }
+// }
+// Console.WriteLine("Enter the size of your array: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter the number");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int res = WriteArray(num, size);
+// Console.Write($"Your array is {res}");
