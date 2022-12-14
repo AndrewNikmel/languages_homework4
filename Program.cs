@@ -128,3 +128,40 @@
 // int num = Convert.ToInt32(Console.ReadLine());
 // int res = WriteArray(num, size);
 // Console.Write($"Your array is {res}");
+
+
+// int[] Array(int [] ar, int size)
+// {
+//     size = Convert.ToInt32(Console.ReadLine());
+//     ar[] = new int [size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         Console.WriteLine("Enter a number:");
+//         int a = Convert.ToInt32(Console.ReadLine());
+//         ar [a] = (a + " " );
+//     }
+//     return ar ;
+// }
+// Console.WriteLine("Enter the size of your array: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Array();
+// Console.WriteLine($"Your array is {Array()}");
+
+// int Length(int num){
+//     num = Convert.ToInt32(Console.ReadLine());
+//     return num;
+// }
+
+void Array(int[] a, int b)
+{
+    a = new int [b];
+    for(int i = 0; i < b; i++){
+        Console.WriteLine("Enter the number: ");
+        a[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    Console.Write(a);
+}
+Console.WriteLine("Enter the length of the array");
+int length = Convert.ToInt32(Console.ReadLine());
+int[] arr = new int [length];
+Array(arr, length);
